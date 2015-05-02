@@ -4,4 +4,8 @@ class StaticPagesController < ApplicationController
 
   def info
   end
+
+  def types
+  end
+
 end
