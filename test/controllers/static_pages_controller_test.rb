@@ -3,7 +3,7 @@ require 'test_helper'
 class StaticPagesControllerTest < ActionController::TestCase
   
   def setup
-  @title = "MBTI Manual"
+  @title = "Personality Preferences"
 end
 
   test "should get home" do
@@ -12,15 +12,17 @@ end
     assert_select "title", "#{@title}"
   end
 
-  test "should get info" do
-    get :info
-    assert_response :success
-    assert_select "title", "Info | " "#{@title}" 
-  end
 
   test "should get types" do 
   	get :types 
   	assert_response :success
   	assert_select "title", "16 Types | " "#{@title}" 
   end
+
+  test "should get ebooks" do 
+  	get :ebooks
+  	assert_response :success
+  	assert_select "title", "Ebooks | " "#{@title}"
+  end
+
 end
