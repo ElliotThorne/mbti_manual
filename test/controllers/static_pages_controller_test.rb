@@ -25,4 +25,11 @@ end
   	assert_select "title", "Ebooks | " "#{@title}"
   end
 
+
+  test "should get intp" do
+  	get :intp
+  	assert_response	:success
+  end
+
+
 end

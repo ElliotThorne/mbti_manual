@@ -8,4 +8,7 @@ class StaticPagesController < ApplicationController
   def types
   end
 
+  def articles
+  end
+
 end
